@@ -1,12 +1,2 @@
-INFLUXDB:
-User: Lucami_Dev_1
-Pass: Gesloinfluxd
-Org: Lucami_Dev
-Bucket: Lucami_Bucket
-Api: N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ==
-
-
-GRAFANA:
-User: admin
-Pass: Geslografana
-
+# Ignore credentials
+.credentials
