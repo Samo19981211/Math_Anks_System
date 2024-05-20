@@ -1,7 +1,7 @@
 const { consoleLogger } = require('@influxdata/influxdb-client');
 const mysql = require('mysql');
 const dbConfig = require("../../config/db.config.js");
-const logger = require('../../logger/logger.js');
+// const logger = require('../../logger/logger.js');
 
 // Import aws_dataController
 const aws_dataController = require('./aws_dataController')

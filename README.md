@@ -81,3 +81,7 @@ from(bucket: "grafana")
 
 
 
+3) XAMPP:
+ 1) Dawnload XAMPP
+ 2) Start MySql 
+ 3) Import database
