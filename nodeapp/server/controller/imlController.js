@@ -3,7 +3,7 @@ const {InfluxDB, Point, consoleLogger} = require('@influxdata/influxdb-client')
 const {PythonShell} = require('python-shell');
 
 
-const logger = require('../../logger/logger');
+// const logger = require('../../logger/logger');
 
 // Saved value of a unique_id
 const begin = require('./userController');
@@ -11,7 +11,7 @@ const unique_id = begin.unique_id;
 
 // You can generate an API token from the "API Tokens Tab" in the UI
 // const token = 'vZQcvi2JcrPvrDBzIVoIZSbjUyF-Jt1DcgpKmozlk23MwuWiUSQbp0JSyc5xkJTKDfmTc0lor4xiQbXj8kL6LQ=='
-const toke = 'N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ=='
+const token = 'N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ=='
 const org = 'test'
 const bucket = 'Calculated_matanks'
 const client = new InfluxDB({url: 'http://localhost:8086', token: token})

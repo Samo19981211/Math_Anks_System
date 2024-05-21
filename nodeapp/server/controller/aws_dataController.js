@@ -29,7 +29,7 @@ function runPythonScripts(inputParam) {
       pythonOptions: ['-u'], // recommended to unbuffer Python output
       // C:\Users\jeans\OneDrive\Namizje\matAnks\nodeapp\Model\Camera\examples\skeleton_detection\camera.py
       // scriptPath: 'C:/Users/jeans/OneDrive/Namizje/matAnks/nodeapp/Model/Camera/examples/skeleton_detection/',
-      cwd: 'C:/Users/Lucami_Sig/Documents/MatAnks/outside/MatAnks/new/nodeapp/Model/Camera',
+      cwd: './Model/Camera',
      
       // C:\Users\Lucami_Sig\Documents\MatAnks\outside\MatAnks\new\nodeapp\Model\tobii.py
       env: {

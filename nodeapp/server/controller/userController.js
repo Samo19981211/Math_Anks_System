@@ -11,7 +11,8 @@ const aws_dataController = require('./aws_dataController')
 const {InfluxDB} = require('@influxdata/influxdb-client')
 
 // You can generate an API token from the "API Tokens Tab" in the UI
-const token = 'yPwFv-_rwT51_64iLB_UTVe5BDjJtqmRpApEV77EpoY9M02vngrG9ho-aiRNmDqGMOd_u0GK5UJ_J0zCSkAnog=='
+// const token = 'yPwFv-_rwT51_64iLB_UTVe5BDjJtqmRpApEV77EpoY9M02vngrG9ho-aiRNmDqGMOd_u0GK5UJ_J0zCSkAnog=='
+const token = 'N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ=='
 const org = "lucami"
 const bucket = 'grafana'
 // const bucket2 = 

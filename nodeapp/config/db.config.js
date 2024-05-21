@@ -1,12 +1,19 @@
 //INFORMATION NEEDED TO GET CONNECTED WITH THE MYSQL SERVER
+// module.exports = {
+//     HOST: "localhost",
+//     USER: "user2",
+//     PASSWORD: "admin",
+//     //Here the db of mysql is defined.EVen if you make another one the table will be created in t his folder
+//     DB: 'users_matanks'
+// };
+
 module.exports = {
     HOST: "localhost",
-    USER: "user2",
-    PASSWORD: "admin",
+    USER: "root",
+    PASSWORD: "",
     //Here the db of mysql is defined.EVen if you make another one the table will be created in t his folder
     DB: 'users_matanks'
 };
-
 
 // IF THE DB FAILS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //backup data and turn restore into data. Then go to php admit and input this query
