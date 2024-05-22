@@ -11,8 +11,11 @@ from influxdb_client import InfluxDBClient, Point, WritePrecision, WriteOptions
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # You can generate an API token from the "API Tokens Tab" in the UI
-token = "v1swk9_enBXFVQvqvhi2jxYOSbtGIAaCLVBQRSaDynKq6lE1guX0R_pyf6uzVhR5DXtgMZrmbYuH8l3NIzV_jw=="
-org = "lucami"
+# token = "v1swk9_enBXFVQvqvhi2jxYOSbtGIAaCLVBQRSaDynKq6lE1guX0R_pyf6uzVhR5DXtgMZrmbYuH8l3NIzV_jw=="
+# org = "lucami"
+token = 'N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ=='
+org = "Lucami_Dev"
+
 input = sys.argv[1]
 bucket = input[9:]
 print("Nekaj")

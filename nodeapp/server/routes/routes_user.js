@@ -25,7 +25,7 @@ router.post('/', userController.find);
 router.get('/begin/:id', userController.begin);
 // router.get('/begin/:id', awsController.aws_button);
 
-router.post('/influx', imlController.influx);
+// router.post('/influx', imlController.influx);
 
 router.get('/adduser', userController.form);
 router.post('/adduser', userController.create);

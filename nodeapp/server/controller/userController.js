@@ -13,7 +13,7 @@ const {InfluxDB} = require('@influxdata/influxdb-client')
 // You can generate an API token from the "API Tokens Tab" in the UI
 // const token = 'yPwFv-_rwT51_64iLB_UTVe5BDjJtqmRpApEV77EpoY9M02vngrG9ho-aiRNmDqGMOd_u0GK5UJ_J0zCSkAnog=='
 const token = 'N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ=='
-const org = "lucami"
+const org = "Lucami_Dev"
 const bucket = 'grafana'
 // const bucket2 = 
 
@@ -209,25 +209,26 @@ exports.begin = (req, res, next) => {
       
 
       const { exec } = require('child_process');
-      const org = "lucami";
+      const org = "Lucami_Dev";
 
       // Create URL
       // C:\MatAnks\setup\Influx\influxdb2-2.0.9-windows-amd64\influxdb2-2.0.9-windows-amd64
       const cmd1 = 'cd C:/Program Files/InfluxData';
-      const cmd2 = `influx bucket create -n ${unique_id} -o ${org} -r 200h`;
-      const cmd = `${cmd1} && ${cmd2}`;
+      const cmd = `influx bucket create -n ${unique_id} -o ${org} -r 200h`;
+      // const cmd = `${cmd1} && ${cmd2}`;
+    
 
       // Execute command
       exec(cmd, (error, stdout, stderr) => {
         if (error) {
-          console.error(`exec error: ${error}`);
+          console.error(`exec error: Bucket is already created ${error}`);
           return;
         }
-        console.log(`stdout: ${stdout}`);
-        console.error(`stderr: ${stderr}`);
+        console.log(`stdout: Bucket was not created ${stdout}`);
+        console.error(`stderr:  ${stderr}`);
       });
 
-    } else {
+      } else {
       console.log(err);
     }
     console.log('The data from user table: \n', rows);

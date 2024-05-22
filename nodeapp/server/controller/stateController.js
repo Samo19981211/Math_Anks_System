@@ -4,8 +4,11 @@ const { use } = require('../routes/routes_user')
 const userController = require('./userController')
 
 // You can generate an API token from the "API Tokens Tab" in the UI
-const token = 'v1swk9_enBXFVQvqvhi2jxYOSbtGIAaCLVBQRSaDynKq6lE1guX0R_pyf6uzVhR5DXtgMZrmbYuH8l3NIzV_jw=='
-const org = 'lucami'
+// const token = 'v1swk9_enBXFVQvqvhi2jxYOSbtGIAaCLVBQRSaDynKq6lE1guX0R_pyf6uzVhR5DXtgMZrmbYuH8l3NIzV_jw=='
+// const org = 'lucami'
+
+const token = 'N5FPKkLaBlm18E-SQ5mSdp9w3YDvf5ggEFD2FQnq8-DzmQTEpnT9B0I1m8X_nlk6C6kw1-_TqkoLf8ubJmyteQ=='
+const org = "Lucami_Dev"
 const bucket = 'buttons'
 
 const client = new InfluxDB({url: 'http://localhost:8086', token: token})
